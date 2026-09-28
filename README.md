@@ -1,24 +1,27 @@
 # Ohm's Law Calculator
 
+![Ohm's Law Calculator screenshot](./screenshots/ohms-law-calculator.jpg)
+
 ## 日本語
 
 ### 制作目的
 
-電気回路で学んだオームの法則を題材に、KotlinとJetpack Composeの基礎を学ぶために、制作している。
+電気回路で学んだオームの法則を題材に、KotlinとJetpack Composeの基礎を学ぶため、本アプリを制作した。
 
 ### 現在の状態
 
-**2026/09/12**
+**2026/09/28**
 
-初期プロジェクトを作成し、画面の構成を考えた。
-計算機能はまだ実装していない。
+計算機能と画面を実装し、基本機能が完成した。  
+単体テストおよびプロジェクト全体のビルドが成功することを確認した。
 
-### 実装予定
+### 実装済みの機能
 
-1. 電圧・電流・抵抗の計算
-2. 入力値のチェックとエラー表示
-3. 入力内容のクリア
-4. 計算処理の単体テスト
+1. オームの法則を使用した電圧・電流・抵抗の計算
+2. 入力内容に誤りがある場合のエラーメッセージ表示
+3. 0で割ろうとした場合のエラーメッセージ表示
+4. 入力値・計算対象・計算結果のクリア
+5. 電圧・電流・抵抗の計算関数に対する単体テスト
 
 ### 使用技術
 
@@ -34,21 +37,22 @@
 
 ### Purpose
 
-To study the basics of Kotlin and Jetpack Compose, I'm building this app which can calculate by using Ohm's law from my electrical circuits studies.
+I created this app to learn the basics of Kotlin and Jetpack Compose using Ohm's law, which I studied in electrical circuits.
 
 ### Current Status
 
-**2026/09/12**
+**2026/09/28**
 
-Created the initial project and planned the screen layout of this app.
-No calculation function.
+The calculation features and user interface have been implemented, and the basic functions are complete.  
+All unit tests pass, and the project builds successfully.
 
-### Planned Features
+### Implemented Features
 
-1. Calculate voltage, current, resistance
-2. Check input values and display error messages
-3. Clear the input values
-4. Write unit tests for the calculate functions
+1. Calculation of voltage, current, and resistance using Ohm's law
+2. Error messages for invalid input
+3. An error message when attempting to divide by zero
+4. Clearing the input values, selected calculation target, and result
+5. Unit tests for the voltage, current, and resistance calculation functions
 
 ### Technologies
 
@@ -64,21 +68,22 @@ No calculation function.
 
 ### 制作目的
 
-为了（入门）学习Kotlin和Jetpack Compose，以电路的欧姆定律为主题，制作欧姆定律计算器。
+为了学习 Kotlin 和 Jetpack Compose 的基础知识，我以电路课程中学过的欧姆定律为主题，制作了这款计算器应用。
 
 ### 当前状态
 
-**2026/09/12**
+**2026/09/28**
 
-已创建初始项目，并构思了页面布局。
-计算功能尚未实现。
+计算功能和用户界面已经完成。  
+所有单元测试均已通过，整个项目也已成功构建。
 
-### 计划功能
+### 已实现的功能
 
-1. 计算电压，电流和电阻
-2. 检查输入值，并显示错误提示
-3. 清除输入值
-4. 为计算函数编写单元测试
+1. 使用欧姆定律计算电压、电流和电阻
+2. 输入内容有误时显示错误信息
+3. 除数为零时显示错误信息
+4. 清除输入值、所选计算目标和计算结果
+5. 对电压、电流和电阻的计算函数进行单元测试
 
 ### 使用技术
 
@@ -86,6 +91,6 @@ No calculation function.
 2. Jetpack Compose
 3. Android Studio
 
-### 教材链接
+### 参考资料
 
-1. [创建您的首个Android应用]（https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?hl=zh-cn#0）
+1. [创建您的首个 Android 应用](https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?hl=zh-cn#0)
